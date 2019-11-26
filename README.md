@@ -9,3 +9,5 @@ Read the Notes from the P3D SDK site about setting up Visual Studio. (Latest - V
 
 This app is basically run as a Win32 MFC Application but compiled to 64 bit.
 Win32 is a bit of a misnomer as it is basically the Windows API. There is no Win64 API.
+
+For some reason CDUServer only builds as a Release version - the Debug version treats some warnings as errors & fails - needs looking into.
