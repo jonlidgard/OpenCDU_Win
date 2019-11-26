@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "resource.h"
-#include <About.h>
+#include "About.h"
 
 CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
    {

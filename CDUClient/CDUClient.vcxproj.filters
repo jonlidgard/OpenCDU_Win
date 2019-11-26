@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\About.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CDUClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -54,6 +51,9 @@
     <ClCompile Include="..\Common\UnicodeFont.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Common\About.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CDUClient.rc">
@@ -61,9 +61,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\About.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CDUClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -89,6 +86,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\include\TracePacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\inc\About.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

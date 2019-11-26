@@ -137,48 +137,56 @@
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\PMDG\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
     <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|x64'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\PMDG\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
     <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\PMDG\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
     <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\PMDG\inc;..\Common\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
+    <IncludePath>inc;..\Common\inc;..\PMDG\inc;...\SimConnect\inc;$(IncludePath)</IncludePath>
     <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -193,7 +201,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -237,7 +246,6 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -281,7 +289,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -326,7 +335,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -371,7 +381,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -415,7 +426,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -459,7 +471,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -516,6 +529,8 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
