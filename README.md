@@ -1,5 +1,5 @@
 # OpenCDU
-OpenCDU is a project to link a homemade CDU to the PMDG 737NG running on Prepar 3D (v4).
+OpenCDU is a project to link a homemade CDU to the legacy [PMDG](https://pmdg.com) 737NG running on Prepar 3D (v4).
 It used to run as a 32bit app on previous versions as well as FSX but is now compiled
 as a 64 bit app to work with the latest versions of P3D.
 
