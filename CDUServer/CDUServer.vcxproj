@@ -178,7 +178,7 @@
     <OutDir>$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\PMDG\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
+    <IncludePath>..\PMDG\inc;..\Common\inc;..\SimConnect\inc;$(IncludePath)</IncludePath>
     <LibraryPath>..\SimConnect\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -503,7 +503,6 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -566,15 +565,16 @@
     <ResourceCompile Include="CDUServer.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\About.h" />
-    <ClInclude Include="..\include\CONNECTS.H" />
-    <ClInclude Include="..\include\ErrorString.h" />
-    <ClInclude Include="..\include\Log.h" />
-    <ClInclude Include="..\include\messages.h" />
-    <ClInclude Include="..\include\port.h" />
-    <ClInclude Include="..\include\SocketThread.h" />
-    <ClInclude Include="..\include\TracePacket.h" />
-    <ClInclude Include="..\include\UnicodeFont.h" />
+    <ClInclude Include="..\Common\inc\About.h" />
+    <ClInclude Include="..\Common\inc\CONNECTS.H" />
+    <ClInclude Include="..\Common\inc\Convert.h" />
+    <ClInclude Include="..\Common\inc\ErrorString.h" />
+    <ClInclude Include="..\Common\inc\Log.h" />
+    <ClInclude Include="..\Common\inc\messages.h" />
+    <ClInclude Include="..\Common\inc\port.h" />
+    <ClInclude Include="..\Common\inc\SocketThread.h" />
+    <ClInclude Include="..\Common\inc\TracePacket.h" />
+    <ClInclude Include="..\Common\inc\UnicodeFont.h" />
     <ClInclude Include="CDUServer.h" />
     <ClInclude Include="CDUServerDlg.h" />
     <ClInclude Include="LISTENS.H" />

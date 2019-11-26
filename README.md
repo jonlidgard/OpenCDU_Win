@@ -1,5 +1,24 @@
-General Notes
+OpenCDU is a project to link a homemade CDU to the PMDG 737 running on Prepar 3D (v4).
+It used to run as a 32bit app on previous versions as well as FSX but is now compiled
+as a 64 bit app to work with the latest versions of P3D.
 
+The homebuilt CDU uses a Rasperry Pi 3B and talks to the PC running the flight sim over
+ethernet/wifi. The code for this is in the OpenCDU-rPi repository.
+
+CDUServer64 talks to the sim via th SimConnect API & doesn't require any 3rd party
+apps.
+
+CDUTestClient is used to check the comms is working
+
+It is configured to only work with the PMDG 737 aircraft but could easily be
+modified to work with the 777, 747 or 737NGX by modifying the offsets referred to
+in the appropriate PMDG SDK header file.
+
+OpenCDU consists of two apps: CDUServer64 & CDUTestClient
+
+
+
+Build Notes 
 All code for P3D is now 64 bit.
 It is recommended that apps are developed as standalone .EXEs rather than .dlls in order to prevent crashing
 P3D due to app bugs.

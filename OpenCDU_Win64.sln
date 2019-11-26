@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDUServer", "CDUServer\CDUServer.vcxproj", "{3CF85575-9F3B-4BA3-9965-9200A83A30EA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDUServer64", "CDUServer\CDUServer.vcxproj", "{3CF85575-9F3B-4BA3-9965-9200A83A30EA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDUClient", "CDUClient\CDUClient.vcxproj", "{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDUTestClient", "CDUClient\CDUClient.vcxproj", "{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +21,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Debug|Win32.ActiveCfg = Debug|Win32
 		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Debug|Win32.Build.0 = Debug|Win32
-		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Debug|x64.ActiveCfg = Debug|x64
-		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Debug|x64.Build.0 = Debug|x64
+		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Debug|x64.ActiveCfg = Release|x64
+		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Debug|x64.Build.0 = Release|x64
 		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Release|Win32.ActiveCfg = Release|Win32
 		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Release|Win32.Build.0 = Release|Win32
 		{3CF85575-9F3B-4BA3-9965-9200A83A30EA}.Release|Win32.Deploy.0 = Release|Win32
@@ -39,8 +39,8 @@ Global
 		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|Win32.ActiveCfg = Debug|Win32
 		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|Win32.Build.0 = Debug|Win32
 		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|Win32.Deploy.0 = Debug|Win32
-		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|x64.ActiveCfg = Debug|x64
-		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|x64.Build.0 = Debug|x64
+		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|x64.ActiveCfg = Release|x64
+		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Debug|x64.Build.0 = Release|x64
 		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Release|Win32.ActiveCfg = Release|Win32
 		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Release|Win32.Build.0 = Release|Win32
 		{312AFCCC-9979-40E9-944E-AEF2EE55CFCE}.Release|x64.ActiveCfg = Release|x64
@@ -56,5 +56,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B580B08C-7D29-4FF8-9298-09EF7B8BEC12}
 	EndGlobalSection
 EndGlobal
